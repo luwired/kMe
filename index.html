@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kMe</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="flex">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#books">books</a></li>
+                <li><a href="#movies_doc">movies/doc</a></li>
+                <li><a href="#artists">artists</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <div id="about">
+            <div id="aboutContent" style="display: none;">
+                <div class="ascii-container">
+                    <pre>
+                      _    __  __
+                     | |  |  \/  |
+                     | | _| \  / | ___
+                     | |/ / |\/| |/ _ \
+                     |   \  |  | |  __/
+                     |_|\_\_|  |_|\___|
+                    </pre>
+                    <p>
+                        <b>Welcome to kMe: A Digital Tapestry of Inspiration</b><br><br>
+                        In the boundless digital landscape, where information flows endlessly and connections form in an instant, kMe stands as a sanctuary of personal expression. More than just a website, it is a carefully woven tapestry of my deepest passions—a space where the books that have shaped my worldview, the films that have stirred my soul, and the artists who have ignited my imagination come together in harmony.
+                        kMe is an open invitation — a gateway into the landscapes of my mind. This is more than a collection of content; it is a reflection of identity, a curated journey through the narratives and inspirations that have colored my life.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="artistsContent" style="display: none;">
+            <div class="grid">
+                <div class="grid-item" onclick="showInfoAlbum('album1')">
+                    <img src="https://images-americanas.b2w.io/produtos/5035082958/imagens/cd-iron-maiden-fear-of-the-dark/5035082958_1_large.jpg">
+                    <h3>Iron Maiden - Fear of the Dark (1992)</h3>
+                </div>
+                <div class="grid-item" onclick="showInfoAlbum('album2')">
+                    <img src="https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2F74066d77c93b9c4838c3f93298f9dd00.1000x1000x1.png">
+                    <h3>$B - Sing Me a Lullaby, My Sweet Temptation (2022)</h3>
+                </div>
+                <div class="grid-item" onclick="showInfoAlbum('album3')">
+                    <img src="https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2Fc323b8ad4a62d8a7574eba3f2f979348.1000x1000x1.png">
+		            <h3>$B - Eternal Grey (2016)</h3>
+		        </div>
+		        <div class="grid-item" onclick="showInfoAlbum('album4')">
+		            <img src="https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2F25b786ddd667f16a6d1f057e31054c3e.1000x1000x1.png">
+		            <h3>Grimes - Art Angels (2015)</h3>
+                </div>
+                <div class="grid-item" onclick="showInfoAlbum('album5')">
+                    <img src="https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2F0b192fee179867f83aaad83e10688389.1000x1000x1.png">
+                    <h3>Grimes - Visions (2012)</h3>
+                </div>
+                <div class="grid-item" onclick="showInfoAlbum('album6')">
+                    <img src="https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2Fdf802250d3acead4851d7037a41a8cba.1000x1000x1.png">
+                    <h3>BONES  & Grayera  - WITHERED (2022)</h3>
+                </div>
+                <div class="grid-item" onclick="showInfoAlbum('album7')">
+                    <img src="https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2Fd5e166caa55c223cfbe27fe3a780b265.1000x1000x1.jpg">
+                    <h3> BONES  & GREAF  - TheWitch&TheWizard (2023)</h3>
+                </div>
+                <div class="grid-item" onclick="showInfoAlbum('album8')">
+                    <img src="https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2F854d1b4e1822b43025f4083a965ea002.999x999x1.png">
+                    <p>Bones -  SoftwareUpdate2.0 (2024)</p>
+                </div>
+                <div id="album1" class="album-info" style="display: none;">
+                    <h3>Iron Maiden - Fear of the Dark (1992)</h3>
+                    <p>Fav tracks: 
+                        <a href="#" onclick="copySong('fear of the dark')">fear of the dark</a>; 
+                        <a href="#" onclick="copySong('be quick or be dead')">be quick or be dead</a>;
+                        <a href="#" onclick="copySong('from here to eternity')">from here to eternity</a>;
+                        <a href="#" onclick="copySong('afraid to shoot strangers')">afraid to shoot strangers</a>;
+                        <a href="#" onclick="copySong('wasting love')">wasting love</a>;
+                        <a href="#" onclick="copySong('childhoods end')">childhoods end</a>;
+                        <a href="#" onclick="copySong('the apparition')">the apparition</a>;
+                    </p>
+                </div>
+                <div id="album2" class="album-info" style="display: none;">
+                    <h3>$B - Sing Me a Lullaby, My Sweet Temptation (2022)</h3>
+                    <p>Fav tracks: 
+                        <a href="#" onclick="copySong('Genesis')">Genesis</a>; 
+                        <a href="#" onclick="copySong('Matte Black')">Matte Black</a>;
+                        <a href="#" onclick="copySong('Escape from Babylon')">Escape from Babylon</a>;
+                        <a href="#" onclick="copySong('Eulogy')">Eulogy</a>;
+                        <a href="#" onclick="copySong('Suicideboys Were Better in 2015')">Suicideboys Were Better in 2015</a>; 
+                        <a href="#" onclick="copySong('Unlucky Me')">Unlucky Me</a>;
+                    </p>
+                </div>
+                <div id="album3" class="album-info" style="display: none;">
+                    <h3>$B - Eternal Grey (2016) </h3>
+                    <p>Fav tracks: 
+                        <a href="#" onclick="copySong('My flaws burn through my skin like demonic flames from hell')">My flaws burn through my skin like demonic flames from hell</a>;
+                        <a href="#" onclick="copySong('Avalon')">Avalon</a>;
+                        <a href="#" onclick="copySong('2 High')">2 High</a>;
+                        <a href="#" onclick="copySong('Eclipse')">Eclipse</a>;
+                        <a href="#" onclick="copySong('The number you have dialed is not in service')">The number you have dialed is not in service</a>;
+                        <a href="#" onclick="copySong('$moke Break (Interlude)')">$moke Break (Interlude)</a>;
+                    </p>
+                </div>
+                <div id="album4" class="album-info" style="display: none;">
+                    <h3>Grimes - Art Angels (2015)</h3>
+                    <p>Fav tracks: 
+                        <a href="#" onclick="copySong('Flesh without Blood')">Flesh without Blood</a>;
+                        <a href="#" onclick="copySong('REALiTi')">REALiTi</a>;
+                        <a href="#" onclick="copySong('Kill V. Maim')">Kill V. Maim</a>;
+                        <a href="#" onclick="copySong('California')">California</a>;
+                        <a href="#" onclick="copySong('Venus Fly (feat. Janelle Monáe)')">Venus Fly (feat. Janelle Monáe)</a>;
+                        <a href="#" onclick="copySong('Artangels')">Artangels</a>;
+                    </p>
+                </div>
+                <div id="album5" class="album-info" style="display: none;">
+                    <h3>Grimes - Visions (2012)</h3>
+                    <p>Fav tracks: 
+                        <a href="#" onclick="copySong('Genesis')">Genesis</a>;
+                        <a href="#" onclick="copySong('Oblivion')">Oblivion</a>;
+                        <a href="#" onclick="copySong('Vowels = space and time')">Vowels = space and time</a>;
+                        <a href="#" onclick="copySong('Skin')">Skin</a>;
+                        <a href="#" onclick="copySong('Be a Body (侘寂)')">Be a Body (侘寂)</a>;
+                        <a href="#" onclick="copySong('Nightmusic (feat. Majical Cloudz)')">Nightmusic (feat. Majical Cloudz)</a>;
+                    </p>
+                </div>
+
+                <div id="album6" class="album-info" style="display: none;">
+                    <h3>BONES & Grayera - WITHERED (2022)</h3>
+                    <p>Fav tracks: 
+                        <a href="#" onclick="copySong('Withered')">Withered</a>;
+                        <a href="#" onclick="copySong('AwayFromKeyboard')">AwayFromKeyboard</a>;
+                        <a href="#" onclick="copySong('Molotov')">Molotov</a>;
+                        <a href="#" onclick="copySong('Static')">Static</a>;
+                        <a href="#" onclick="copySong('LightningStrikes')">LightningStrikes</a>;
+                    </p>
+                </div>
+
+                <div id="album7" class="album-info" style="display: none;">
+                    <h3>BONES & GREAF - TheWitch&TheWizard (2023)</h3>
+                    <p>Fav tracks: 
+                        <a href="#" onclick="copySong('WeatherMan')">WeatherMan</a>;
+                        <a href="#" onclick="copySong('RampartRange')">RampartRange</a>;
+                        <a href="#" onclick="copySong('Hellfire')">Hellfire</a>;
+                        <a href="#" onclick="copySong('MorningDew')">MorningDew</a>;
+                        <a href="#" onclick="copySong('RustedLocket')">RustedLocket</a>;
+                    </p>
+                </div>
+                
+                <div id="album8" class="album-info" style="display: none;">
+                    <h3>Bones - SoftwareUpdate2.0 (2024)</h3>
+                    <p>Fav tracks: 
+                        <a href="#" onclick="copySong('CtrlAltDelete')">CtrlAltDelete</a>;
+                        <a href="#" onclick="copySong('BootSequence')">BootSequence</a>;
+                        <a href="#" onclick="copySong('SystemRestore')">SystemRestore</a>;
+                        <a href="#" onclick="copySong('DeviceManager')">DeviceManager</a>;
+                        <a href="#" onclick="copySong('KernelPanic')">KernelPanic</a>;
+                    </p>
+                </div>
+                <div id="popup" class="popup" style="display: none;">
+                    <p id="popup-message"></p>
+                </div>
+            </div>
+        </div>
+        <div id="books">
+            <div id="booksContent" style="display: none;">
+                <div class="grid">
+                    <div class="grid-item" onclick="showInfoBook('book1')">
+                        <img src="https://m.media-amazon.com/images/I/71Gr1CXMkRL.jpg">
+                        <h3>Carl Sagan - Pale blue dot</h3>
+                    </div>
+                    <div class="grid-item" onclick="showInfoBook('book2')">
+                        <img src="https://m.media-amazon.com/images/I/71OZY035QKL.jpg">
+                        <h3>Antoine de Saint-Exupéry - The Litle Prince</h3>
+                    </div>
+                    <div class="grid-item" onclick="showInfoBook('book3')">
+                        <img src="https://m.media-amazon.com/images/I/617yhDETYbL._AC_UF1000,1000_QL80_.jpg">
+                        <h3>Michael Brooks - Free Radical</h3>
+                    </div>
+                    <div class="grid-item" onclick="showInfoBook('book4')">
+                        <img src="https://m.media-amazon.com/images/I/71nuMXgEl7L._UF894,1000_QL80_.jpg">
+                        <h3>Sarah Harvey - Kaizen</h3>
+                    </div>
+                </div>
+                <div id="book1" class="book-info" style="display: none;">
+                    <h3>Book: Pale blue dot</h3>
+                    <p>Author: Carl Sagan</p>
+                    <p>A reflection on humanity's place in the cosmos, inspired by the Voyager 1 photo of Earth. Sagan explores our planet’s insignificance in the vast universe and advocates for space exploration as crucial for our future. The book blends science, philosophy, and a call for environmental responsibility.</p>
+                </div>
+                <div id="book2" class="book-info" style="display: none;">
+                    <h3>Book: The Little Prince</h3>
+                    <p>Author: Antoine de Saint-Exupéry</p>
+                    <p>Description: A timeless fable about a young prince who travels from planet to planet, learning about love, loss, and human nature. Through poetic storytelling, it highlights the importance of imagination, kindness, and seeing with the heart rather than just the eyes.</p>
+                </div>
+                <div id="book3" class="book-info" style="display: none;">
+                    <h3>Book: Free Radicals</h3>
+                    <p>Author: Michael Brooks</p>
+                    <p>Description: Explores the untamed, rebellious nature of scientific discovery. It challenges the perception of scientists as purely rational and disciplined, revealing how chaos, intuition, and rule-breaking often drive groundbreaking advancements.</p>
+                </div>
+                <div id="book4" class="book-info" style="display: none;">
+                    <h3>Book: Kaizen</h3>
+                    <p>Author: Sarah Harvey</p>
+                    <p>Description: Introduces the Japanese philosophy of continuous improvement through small, consistent changes. It provides practical insights on applying Kaizen to personal growth, productivity, and well-being, emphasizing sustainable progress over drastic transformations.</p>
+                </div>
+                <div id="popup" class="popup" style="display: none;">
+                    <p id="popup-message"></p>
+                </div>
+            </div>
+        </div>
+        <div id="movies_doc">
+            <div id="moviesDocContent" style="display: none;">
+                <div class="grid">
+                    <div class="grid-item" onclick="showInfoMovie('movie1')">
+                        <img src="https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg" alt="The Matrix">
+                        <h3>The Matrix (1999)</h3>
+
+                    </div>
+                    <div class="grid-item" onclick="showInfoMovie('movie2')">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_.jpg" alt="Blade Runner 2049">
+                        <h3>Blade Runner 2049 (2017)</h3>
+
+                    </div>
+                    <div class="grid-item" onclick="showInfoMovie('movie3')">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_.jpg" alt="Interstellar">
+                        <h3>Interstellar (2014)</h3>
+                    </div>
+                    <div class="grid-item" onclick="showInfoMovie('movie4')">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZmE0YzIxM2QtMGNlMi00MjRmLWE3MWMtOWQzMGVjMmU0YTFmXkEyXkFqcGc@._V1_.jpg" alt="The Terminator">
+                        <h3>The Terminator (1984)</h3>
+                    </div>
+                </div>
+                <div id="movie1" class="movie-info" style="display: none;">
+                    <h3>The Matrix (1999)</h3>
+                    <p>Description: A hacker discovers that the world he lives in is a simulation created by machines and joins a group of rebels to free humanity.</p>
+                    <p>Fav quotes: 
+                        <a href="#" onclick="copyQuote('I know kung fu.')">"I know kung fu."</a>;
+                        <a href="#" onclick="copyQuote('What is real?')">"What is real?"</a>;
+                        <a href="#" onclick="copyQuote('You re a little out of shape.')">"You're a little out of shape." </a>;
+                    </p>
+                </div>
+                <div id="movie2" class="movie-info" style="display: none;">
+                    <h3>Blade Runner 2049 (2017)</h3>
+                    <p>Description: A replicant blade runner uncovers a secret that could change the future of human-machine relations, leading him to search for a long-lost blade runner.</p>
+                    <p>Fav quotes: 
+                        <a href="#" onclick="copyQuote('I am your memories.')">"I am your memories."</a>;
+                        <a href="#" onclick="copyQuote('What’s the point of keeping up the lie?')">"What’s the point of keeping up the lie?"</a>;
+                    </p>
+                </div>
+                <div id="movie3" class="movie-info" style="display: none;">
+                    <h3>Interstellar (2014)</h3>
+                    <p>Description: In a future where Earth is becoming uninhabitable, a group of astronauts travels through a wormhole in search of a new home for humanity.</p>
+                    <p>Fav quotes: 
+                        <a href="#" onclick="copyQuote('Do not go gentle into that good night.')">"Do not go gentle into that good night."</a>;
+                        <a href="#" onclick="copyQuote('Love is the one thing that transcends time and space.')">"Love is the one thing that transcends time and space."</a>;
+                    </p>
+                </div>
+                <div id="movie4" class="movie-info" style="display: none;">
+                    <h3>The Terminator (1984)</h3>
+                    <p>Description: A cyborg assassin is sent from the future to eliminate the mother of the human resistance leader, while a soldier fights to protect her.</p>
+                    <p>Fav quotes: 
+                        <a href="#" onclick="copyQuote('I’ll be back.')">"I’ll be back."</a>;
+                        <a href="#" onclick="copyQuote('Come with me if you want to live.')">"Come with me if you want to live."</a>;
+                    </p>
+                </div>
+                <div id="popup-movie" class="popup-movie" style="display: none;">
+                    <p id="popup-message-movie"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
